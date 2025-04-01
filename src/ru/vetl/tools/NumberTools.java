@@ -16,6 +16,7 @@ public class NumberTools {
         класс Matcher ищет совпадения всех строк которые попадают под этот шаблон
         trim() - удаляет пробелы
         * */
+
         Matcher matcher = pattern.matcher(numberStr.trim());
 
         //find возвращает true если нашел совпадения

@@ -4,9 +4,9 @@ import ru.vetl.animals.Animal;
 import ru.vetl.animals.birds.IFlying;
 import ru.vetl.data.AnimalTypeData;
 import ru.vetl.data.ColorData;
-
 import java.util.List;
 import java.util.Scanner;
+
 
 public class AddAnimal {
 
@@ -14,24 +14,20 @@ public class AddAnimal {
         System.out.println("Добавление нового животного");
 
         AddName addName = new AddName();            //имя животного
-//        addName.addName(scanner);
         String name = addName.addName(scanner);
 
         AddAge addAge = new AddAge();               //возраст
-//        addAge.addAge(scanner, "возраст");
         int age = addAge.addAge(scanner, "возраст");
 
-//        addAge.addAge(scanner, "вес");
+
         int weight = addAge.addAge(scanner, "вес");
 
 
         AddColor addColor = new AddColor();
-//        addColor.addColor(scanner);
         ColorData color = addColor.addColor(scanner);
 
 
         AddType addType = new AddType();
-//        addType.addType(scanner);
         AnimalTypeData type = addType.addType(scanner);
 
 

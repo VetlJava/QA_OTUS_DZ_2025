@@ -3,15 +3,12 @@ package ru.vetl;
 import ru.vetl.animals.Animal;
 import ru.vetl.data.CommandsData;
 import ru.vetl.factory.AddAnimal;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 
-//    private static final Scanner scanner = new Scanner(System.in);
-//    private static List<Animal> animalList = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -50,11 +47,8 @@ public class Main {
             switch (CommandsData.valueOf(userCommandUpperCase)) {
                 case ADD: {
                     AddAnimal addAnimal = new AddAnimal();
-//                    addAnimal.addAnimal(scanner, animals);
                     Animal animal = addAnimal.addAnimal(scanner, animals);
                     System.out.println(animal);
-
-
                     break;
                 }
                 case LIST: {

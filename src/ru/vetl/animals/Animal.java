@@ -3,7 +3,7 @@ package ru.vetl.animals;
 import ru.vetl.data.AnimalTypeData;
 import ru.vetl.data.ColorData;
 
-public abstract class Animal {          //мы запрещаем создание класса Animal
+public abstract class Animal {      //мы запрещаем создание класса Animal
     //поля
     private String name;
     private int age;
